@@ -1,4 +1,4 @@
-# calc.github.io
+# easycalc.github.io
 
 Static calculator suite built with Vite + TypeScript + Tailwind, powered by [`decimal.js`](https://mikemcl.github.io/decimal.js/) for precise arithmetic.
 
@@ -25,7 +25,7 @@ The repository is wired for GitHub Pages. On push to `main`, the workflow at `.g
 1. Installs dependencies with `npm ci`
 2. Builds the site with Vite
 3. Copies `dist/index.html` to `dist/404.html` to support deep links
-4. Publishes `dist/` to the `gh-pages` branch via `peaceiris/actions-gh-pages`
+4. Publishes `dist/` to GitHub Pages via `actions/deploy-pages`
 
 If you prefer a manual publish, run `npm run build` and upload the `dist/` folder to your static host (or copy to a `docs/` folder and enable Pages from `docs/`).
 
