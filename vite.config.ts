@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 
-const repoBase = '/calc.github.io/'
+// Default to root for GitHub Pages user/org sites; allow override via env.
+const repoBase = '/'
 
 export default defineConfig({
   base: process.env.VITE_BASE_PATH || repoBase,
